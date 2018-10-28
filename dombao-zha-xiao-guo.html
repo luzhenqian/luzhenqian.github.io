@@ -1,0 +1,818 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>DOM爆炸效果 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-ad/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="li-yong-gitbook-+-gitpage-zhi-zuo-ge-ren-bo-ke.html" />
+    
+    
+    <link rel="prev" href="ye-mian.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    WebSocket是时候展现你优秀的一面了
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ye-mian.html">
+            
+                <a href="ye-mian.html">
+            
+                    
+                    绘制熊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="dombao-zha-xiao-guo.html">
+            
+                <a href="dombao-zha-xiao-guo.html">
+            
+                    
+                    DOM爆炸效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="li-yong-gitbook-+-gitpage-zhi-zuo-ge-ren-bo-ke.html">
+            
+                <a href="li-yong-gitbook-+-gitpage-zhi-zuo-ge-ren-bo-ke.html">
+            
+                    
+                    利用gitbook+gitpage制作个人博客
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="gitbookcha-jian.html">
+            
+                <a href="gitbookcha-jian.html">
+            
+                    
+                    gitbook插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >DOM爆炸效果</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x539F;&#x751F;js&#x5B9E;&#x73B0;dom&#x7206;&#x70B8;&#x6548;&#x679C;">&#x539F;&#x751F;JS&#x5B9E;&#x73B0;DOM&#x7206;&#x70B8;&#x6548;&#x679C;</h1>
+<p>&#x9605;&#x8BFB; 2309</p>
+<p>&#x6536;&#x85CF; 58</p>
+<p>2018-10-27</p>
+<p>&#x539F;&#x6587;&#x94FE;&#x63A5;&#xFF1A;</p>
+<p><a href="https://link.juejin.im/?target=http%3A%2F%2Fzhuanlan.zhihu.com%2Fp%2F47770130" target="_blank">zhuanlan.zhihu.com</a></p>
+<h2 id="&#x7206;&#x70B8;&#x52A8;&#x6548;&#x5206;&#x4EAB;"><strong>&#x7206;&#x70B8;&#x52A8;&#x6548;&#x5206;&#x4EAB;</strong></h2>
+<h2 id="&#x524D;&#x8A00;"><strong>&#x524D;&#x8A00;</strong></h2>
+<p>&#x6B64;&#x6B21;&#x5206;&#x4EAB;&#x662F;&#x4E00;&#x6B21;&#x81EA;&#x6211;&#x7EC4;&#x4EF6;&#x5F00;&#x53D1;&#x7684;&#x603B;&#x7ED3;&#xFF0C;&#x8FD8;&#x662F;&#x6709;&#x5F88;&#x591A;&#x4E0D;&#x8DB3;&#x4E4B;&#x5904;&#xFF0C;&#x671B;&#x5404;&#x4F4D;&#x5927;&#x5927;&#x591A;&#x63D0;&#x5B9D;&#x8D35;&#x610F;&#x89C1;&#xFF0C;&#x4E92;&#x76F8;&#x5B66;&#x4E60;&#x4EA4;&#x6D41;&#x3002;</p>
+<h2 id="&#x5206;&#x4EAB;&#x5185;&#x5BB9;&#x4ECB;&#x7ECD;"><strong>&#x5206;&#x4EAB;&#x5185;&#x5BB9;&#x4ECB;&#x7ECD;</strong></h2>
+<blockquote>
+<p>&#x901A;&#x8FC7;&#x539F;&#x751F;js&#x4EE3;&#x7801;&#xFF0C;&#x5B9E;&#x73B0;&#x7C92;&#x5B50;&#x7206;&#x70B8;&#x6548;&#x679C;&#x7EC4;&#x4EF6; &#x7EC4;&#x4EF6;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;&#x5230;&#x4E86;&#x516C;&#x53F8;&#x5185;&#x90E8;&#x5341;&#x5206;&#x9AD8;&#x6548;&#x7684;&#x5DE5;&#x7A0B;&#x5316;&#x73AF;&#x5883;&#xFF0C;&#x7279;&#x6B64;&#x6253;&#x4E2A;&#x5E7F;&#x544A;&#xFF1A; &#x65B0;&#x6D6A;&#x79FB;&#x52A8;&#x8BDA;&#x62DB;&#x5404;&#x79CD;&#x6280;&#x672F;&#x5927;&#x5927;&#xFF01;&#x53EF;&#x4EE5;&#x79C1;&#x804A;&#x6295;&#x7B80;&#x5386;&#x54E6;&#xFF01;</p>
+</blockquote>
+<h2 id="&#x6548;&#x679C;&#x9884;&#x89C8;"><strong>&#x6548;&#x679C;&#x9884;&#x89C8;</strong></h2>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/26/166b10477e0f6e96?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt=""></p>
+<h2 id="&#x6548;&#x679C;&#x5206;&#x6790;"><strong>&#x6548;&#x679C;&#x5206;&#x6790;</strong></h2>
+<ul>
+<li>* &#x70B9;&#x51FB;&#x4F5C;&#x4E3A;&#x52A8;&#x753B;&#x5F00;&#x59CB;&#x7684;&#x8D77;&#x70B9;,&#x81EA;&#x52A8;&#x7ED3;&#x675F;</li>
+<li>* &#x6BCF;&#x6B21;&#x6548;&#x679C;&#x4EA7;&#x751F;&#x591A;&#x4E2A;&#x629B;&#x7269;&#x7EBF;&#x7C92;&#x5B50;&#x8FD0;&#x52A8;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x65B9;&#x5411;&#x968F;&#x673A;&#xFF0C;&#x5C55;&#x793A;&#x5185;&#x5BB9;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x6709;&#x7A7A;&#x95F4;&#x4E0A;Z&#x8F74;&#x7684;&#x5927;&#x5C0F;&#x53D8;&#x5316;</li>
+<li>* &#x9700;&#x6C42;&#x4E0A;&#x53EF;&#x4EE5;&#x65E0;&#x95F4;&#x9694;&#x70B9;&#x51FB;&#xFF0C;&#x5373;&#x7B2C;&#x4E00;&#x7EC4;&#x52A8;&#x753B;&#x672A;&#x7ED3;&#x675F;&#x53EF;&#x64AD;&#x653E;&#x7B2C;&#x4E8C;&#x7EC4;&#x52A8;&#x753B;</li>
+<li>* &#x52A8;&#x753B;&#x57FA;&#x672C;&#x6267;&#x884C;&#x65F6;&#x957F;&#x4E00;&#x81F4;</li>
+</ul>
+<h2 id="&#x7531;&#x4EE5;&#x4E0A;&#x56DB;&#x70B9;&#x5206;&#x6790;&#x540E;&#xFF0C;&#x52A8;&#x753B;&#x5B9E;&#x73B0;&#x6709;&#x54EA;&#x4E9B;&#x5B9E;&#x73B0;&#x65B9;&#x6848;&#x5462;&#xFF1F;"><strong>&#x7531;&#x4EE5;&#x4E0A;&#x56DB;&#x70B9;&#x5206;&#x6790;&#x540E;&#xFF0C;&#x52A8;&#x753B;&#x5B9E;&#x73B0;&#x6709;&#x54EA;&#x4E9B;&#x5B9E;&#x73B0;&#x65B9;&#x6848;&#x5462;&#xFF1F;</strong></h2>
+<ul>
+<li><strong>css&#x64CD;&#x4F5C;&#x6001;&#x53D8;&#x6362;&#xFF08;&#x5982;focus&#xFF09;&#x4F7F;&#x5B50;&#x5143;&#x7D20;&#x6267;&#x884C;&#x52A8;&#x753B;</strong></li>
+</ul>
+<blockquote>
+<p>`&#x4E0D;&#x53EF;&#x53D6;&#xFF0C;&#x6548;&#x679C;&#x53EF;&#x591A;&#x6B21;&#x8FDE;&#x70B9;&#xFF0C;css&#x72B6;&#x6001;&#x53D8;&#x6362;&#x4E0E;&#x9700;&#x6C42;&#x4E0D;&#x7B26;`</p>
+</blockquote>
+<ul>
+<li><strong>Js &#x63A7;&#x5236;&#x52A8;&#x753B;&#x5F00;&#x59CB;&#xFF0C;&#x4E8B;&#x5148;&#x5199;&#x597D;css&#x52A8;&#x753B;&#x9884;&#x7F6E;&#xFF0C;&#x901A;&#x8FC7;class &#x5305;&#x542B;&#x9009;&#x62E9;&#x5668;&#x5207;&#x6362;&#x52A8;&#x753B; &#x4F8B;&#x5982;&#xFF1A; .active .items{animation:xxx ...;}</strong></li>
+</ul>
+<blockquote>
+<p>`&#x4E0D;&#x53EF;&#x53D6;&#xFF0C;&#x5355;&#x6B21;&#x6267;&#x884C;&#x52A8;&#x753B;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x5B58;&#x5728;&#x6548;&#x679C;&#x7684;&#x56FA;&#x5B9A;&#xFF0C;&#x4EE5;&#x53CA;&#x65E0;&#x6CD5;&#x8FDE;&#x7EED;&#x6267;&#x884C;&#x52A8;&#x753B;`</p>
+</blockquote>
+<ul>
+<li><strong>&#x4E8B;&#x5148;&#x5199;&#x597D;&#x5927;&#x91CF;&#x52A8;&#x753B;&#xFF0C;&#x9690;&#x85CF;&#x5927;&#x91CF;dom&#x5143;&#x7D20;&#xFF0C;&#x52A8;&#x753B;&#x5F00;&#x59CB;&#x968F;&#x673A;&#x9009;&#x53D6;dom&#x5143;&#x7D20;&#x6267;&#x884C;&#x81EA;&#x5DF1;&#x552F;&#x4E00;&#x7684;&#x52A8;&#x753B;keyframes</strong></li>
+</ul>
+<blockquote>
+<p>`&#x5B9E;&#x73B0;&#x5C42;&#x9762;&#x6765;&#x8BF4;&#xFF0C;&#x884C;&#x5F97;&#x901A;&#xFF0C;&#x4F46;&#x662F;&#x8BC4;&#x8BBA;&#x5217;&#x8868;&#x957F;&#x7684;&#x65F6;&#x5019;&#xFF0C;dom&#x6570;&#x91CF;&#x5DE8;&#x5927;&#xFF0C;&#x4E14;css&#x5927;&#x91CF;&#x52A8;&#x753B;&#x9020;&#x6210;&#x4EE3;&#x7801;&#x91CF;&#x6C89;&#x91CD;&#x3001;&#x65E0;&#x968F;&#x673A;&#x6027;`</p>
+</blockquote>
+<ul>
+<li><strong>&#x629B;&#x5F03;css&#x52A8;&#x753B;&#xFF0C;&#x4F7F;&#x7528;canvas &#x7ED8;&#x5236;&#x52A8;&#x753B;</strong></li>
+</ul>
+<blockquote>
+<p>`&#x53EF;&#x884C;&#xFF0C;&#x4F46;&#x662F;canvas&#x7EF4;&#x62A4;&#x6210;&#x672C;&#x7565;&#x9AD8;&#xFF0C;&#x4E14;&#x81EA;&#x5B9A;&#x4E49;&#x529F;&#x80FD;&#x96BE;&#x8BBE;&#x8BA1;&#xFF0C;&#x5C4F;&#x5E55;&#x9002;&#x914D;&#x4E5F;&#x6709;&#x4E00;&#x5B9A;&#x6210;&#x672C;`</p>
+</blockquote>
+<ul>
+<li><strong>js&#x505A;dom&#x521B;&#x5EFA;&#xFF0C;&#x751F;&#x6210;&#x968F;&#x673A;css @keyframes</strong></li>
+</ul>
+<blockquote>
+<p>`&#x53EF;&#x884C;&#xFF0C;&#x4F46;&#x662F;&#x521B;&#x5EFA;style&#x6837;&#x5F0F;&#x8868;&#xFF0C;&#x5F15;&#x53D1;css&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#x9875;&#x9762;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x9875;&#x9762;&#x7684;&#x6027;&#x80FD;&#x4E0B;&#x964D;&#xFF0C;&#x4E14;&#x629B;&#x7269;&#x7EBF;css&#x7684;&#x590D;&#x6742;&#x5EA6;&#x4E0D;&#x4F4E;&#xFF0C;&#x6682;&#x4E0D;&#x4F5C;&#x4E3A;&#x9996;&#x9009;`</p>
+</blockquote>
+<ul>
+<li><strong>js &#x5237;&#x5E27; &#x505A;dom&#x6E32;&#x67D3;</strong></li>
+</ul>
+<blockquote>
+<p>`&#x53EF;&#x884C;&#xFF0C;&#x4F46;&#x662F;&#x5237;&#x5E27;&#x64CD;&#x4F5C;&#x4F1A;&#x9020;&#x6210;&#x6027;&#x80FD;&#x538B;&#x529B;`</p>
+</blockquote>
+<h2 id="&#x7ED3;&#x8BBA;"><strong>&#x7ED3;&#x8BBA;</strong></h2>
+<p>canvas&#x867D;&#x8BF4;&#x53EF;&#x884C;&#xFF0C;&#x4F46;&#x7531;&#x4E8E;&#x5176;&#x5F00;&#x53D1;&#x5F0A;&#x7AEF; &#x672C;&#x6B21;&#x5206;&#x4EAB;&#x4E0D;&#x4EE5;canvas&#x4E3A;&#x5206;&#x4EAB;&#x5185;&#x5BB9;&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528;&#x6700;&#x540E;&#x4E00;&#x79CD; js&#x5237;&#x5E27;&#x7684;dom&#x64CD;&#x4F5C;</p>
+<hr>
+<h2 id="&#x7EC4;&#x4EF6;&#x7ED3;&#x6784;"><strong>&#x7EC4;&#x4EF6;&#x7ED3;&#x6784;</strong></h2>
+<p>&#x7531;&#x622A;&#x56FE;&#x5206;&#x4EAB;&#xFF0C;&#x52A8;&#x753B;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x9996;&#x5148;&#xFF0C;&#x968F;&#x673A;&#x53D1;&#x6563;&#x7684;&#x7C92;&#x5B50;&#x5177;&#x6709;&#x5171;&#x6027;&#xFF1A;&#x629B;&#x7269;&#x7EBF;&#x52A8;&#x753B;&#xFF0C;&#x6DE1;&#x51FA;&#xFF0C;&#x6E32;&#x67D3;&#x8868;&#x60C5;</p>
+<p>&#x800C;&#x4F8B;&#x5B50;&#x6570;&#x91CF;&#x53D8;&#x591A;&#x4E4B;&#x540E;&#x5219;&#x4E3A;&#x622A;&#x56FE;&#x4E2D;&#x7684;&#x6548;&#x679C;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x7531;&#x4E8E;&#x6027;&#x80FD;&#x539F;&#x56E0;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x505A;&#x5230;&#x7C92;&#x5B50;&#x7684;&#x638C;&#x63A7;&#xFF0C;&#x5B9E;&#x73B0;&#x8D44;&#x6E90;&#x518D;&#x5229;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x8FD8;&#x9700;&#x8981;&#x7B2C;&#x4E8C;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x4F5C;&#x4E3A;&#x7C92;&#x5B50;&#x7684;&#x7BA1;&#x63A7;&#x7EC4;&#x4EF6;</p>
+<p>&#x6240;&#x4EE5;&#xFF1A; &#x6B64;&#x529F;&#x80FD;&#x53EF;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x6A21;&#x5757;&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#xFF1A; partical.js &#x7C92;&#x5B50;&#x529F;&#x80FD; &#x4E0E; boom.js &#x7C92;&#x5B50;&#x7BA1;&#x7406;</p>
+<hr>
+<h2 id="&#x5B9E;&#x73B0;-particaljs"><strong>&#x5B9E;&#x73B0; Partical.js</strong></h2>
+<p><strong>1. &#x524D;&#x7F6E;&#x8D44;&#x6E90;&#xFF1A;&#x629B;&#x7269;&#x7EBF;&#x8FD0;&#x52A8;&#x7684;&#x7269;&#x7406;&#x66F2;&#x7EBF;&#x9700;&#x8981;&#x4F7F;&#x7528;Tween.js&#x63D0;&#x4F9B;&#x7684;&#x901F;&#x5EA6;&#x51FD;&#x6570;</strong></p>
+<p>&#x82E5;&#x4E0D;&#x60F3;&#x5F15;&#x5165;Tween.js &#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;</p>
+<pre><code>/** Tween.js
+* t: current time&#xFF08;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#xFF09;&#xFF1B;
+* b: beginning value&#xFF08;&#x521D;&#x59CB;&#x503C;&#xFF09;&#xFF1B;
+* c: change in value&#xFF08;&#x53D8;&#x5316;&#x91CF;&#xFF09;&#xFF1B;
+* d: duration&#xFF08;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#xFF09;&#x3002;
+* you can visit &apos;&#x7F13;&#x52A8;&#x51FD;&#x6570;&#x901F;&#x67E5;&#x8868;&apos; to get effect
+*/            
+
+const Quad = {
+    easeIn: function(t, b, c, d) {
+        return c * (t /= d) * t + b;
+    },
+    easeOut: function(t, b, c, d) {
+        return -c *(t /= d)*(t-2) + b;  
+    },
+    easeInOut: function(t, b, c, d) {
+        if ((t /= d / 2) 
+&lt;
+ 1) return c / 2 * t * t + b;
+        return -c / 2 * ((--t) * (t-2) - 1) + b;
+    }
+}
+const Linear = function(t, b, c, d) { 
+     return c * t / d + b; 
+}
+</code></pre><p><strong>2. &#x7C92;&#x5B50;&#x5B9E;&#x73B0;</strong></p>
+<p>&#x5B9E;&#x73B0;&#x601D;&#x8DEF;&#xFF1A;</p>
+<p>&#x5E0C;&#x671B;&#x5728;&#x7C92;&#x5B50;&#x7BA1;&#x63A7;&#x7EC4;&#x4EF6;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;new partical&#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x7C92;&#x5B50;&#xFF0C;&#x6BCF;&#x4E2A;&#x7C92;&#x5B50;&#x5B58;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x52A8;&#x753B;&#x5F00;&#x59CB;&#x65B9;&#x6CD5;&#xFF0C;&#x52A8;&#x753B;&#x7ED3;&#x675F;&#x56DE;&#x8C03;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x8BC4;&#x8BBA;&#x5217;&#x8868;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x6570;&#x91CF;&#x5DE8;&#x5927;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x53EA;&#x5168;&#x5C40;&#x521B;&#x5EFA;&#x6709;&#x9650;&#x4E2A;&#x6570;&#x7684;&#x7C92;&#x5B50;&#xFF0C;&#x90A3;&#x4E48;&#x5219;&#x63D0;&#x4F9B;&#x5462;&#x5BB9;&#x5668;&#x79FB;&#x9664;&#x7C92;&#x5B50;&#x529F;&#x80FD;&#x4EE5;&#x53CA;&#x5BB9;&#x5668;&#x6DFB;&#x52A0;&#x7C92;&#x5B50;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5B9E;&#x73B0;&#x7C92;&#x5B50;&#x7684;&#x590D;&#x7528;</p>
+<p>partical_style.css</p>
+<pre><code>//&#x7C92;&#x5B50;&#x5145;&#x6EE1;&#x7C92;&#x5B50;&#x5BB9;&#x5668;&#xFF0C;&#x9700;&#x8981;&#x5BB9;&#x5668;&#x5B58;&#x5728;&#x5C3A;&#x5BF8;&#x4EE5;&#x53CA;relative&#x5B9A;&#x4F4D;
+.Boom-Partical_Holder{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+</code></pre><p>particle.js</p>
+<pre><code>import &quot;partical_style.css&quot;;
+
+class Partical{
+    // dom&#x4E3A;&#x88C5;&#x8F7D;&#x52A8;&#x753B;&#x5143;&#x7D20;&#x7684;&#x5BB9;&#x5668; &#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x4F4D;&#x7F6E;&#x7B49;&#x6837;&#x5F0F;
+    dom = null;
+    // &#x52A8;&#x753B;&#x5F00;&#x59CB;&#x65F6;&#x95F4;
+     StartTime = -1;
+    // &#x5F53;&#x524D;&#x7C92;&#x5B50;&#x7684;&#x52A8;&#x753B;&#x65B9;&#x5411;&#xFF0C;&#x533A;&#x522B;&#x4E0A;&#x629B;&#x8FD0;&#x52A8;&#x4E0E;&#x4E0B;&#x629B;&#x8FD0;&#x52A8;
+    direction = &quot;UP&quot;;
+    // &#x52A8;&#x753B;&#x5EF6;&#x8FDF;
+    delay = 0;
+    // &#x4E09;&#x65B9;&#x5411;&#x4F4D;&#x79FB;&#x503C;
+    targetZ = 0;
+    targetY = 0;
+    targetX = 0;
+    // &#x7F29;&#x653E;&#x500D;&#x7387;
+    scaleNum = 1;
+    // &#x662F;&#x5426;&#x6B63;&#x5728;&#x6267;&#x884C;&#x52A8;&#x753B;
+    animating = false;
+    // &#x7C92;&#x5B50;&#x7684;&#x7236;&#x5BB9;&#x5668;&#xFF0C;&#x6807;&#x8BC6;&#x6B64;&#x7C92;&#x5B50;&#x88AB;&#x6E32;&#x67D3;&#x5230;&#x90A3;&#x4E2A;&#x5143;&#x7D20;&#x5185;
+    parent = null;
+    // &#x52A8;&#x753B;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5217;&#x8868;
+    animEndCBList = [];
+    // &#x7C92;&#x5B50;&#x6E32;&#x67D3;&#x7684;&#x5185;&#x5BB9;&#x5BB9;&#x5668; slot
+    con = null;
+
+    constructor(){
+        //&#x521B;&#x5EFA;&#x52A8;&#x753B;&#x7C92;&#x5B50;dom
+        this.dom = document.createElement(&quot;div&quot;);
+        this.dom.classList.add(&quot;Boom-Partical_Holder&quot;);
+        this.dom.innerHTML = `
+
+&lt;
+div class=&quot;Boom-Partical_con&quot;
+&gt;
+
+                Boom
+
+&lt;
+/div
+&gt;
+
+        `;
+    }
+
+    // &#x5728;&#x54EA;&#x91CC;&#x6E32;&#x67D3;
+    renderIn(parent) {
+        // dom&#x5224;&#x65AD;&#x6B64;&#x5904;&#x7701;&#x7565;
+        parent.appendChild(this.dom);
+        this.parent = parent;
+        // &#x6B64;&#x5904;&#x4E3A;&#x521D;&#x59CB;&#x5316; slot &#x5BB9;&#x5668;
+        !this.con 
+&amp;
+&amp;
+ ( this.con = this.dom.querySelector(&quot;.Boom-Partical_con&quot;));
+     }
+
+     // &#x7528;&#x4E8E;&#x7236;&#x5BB9;&#x5668;&#x79FB;&#x9664;&#x5F53;&#x524D;&#x7C92;&#x5B50;
+     deleteEl(){
+         // dom&#x5224;&#x65AD;&#x6B64;&#x5904;&#x7701;&#x7565;
+         this.parent.removeChild(this.dom);
+     }
+
+     // &#x6267;&#x884C;&#x52A8;&#x753B;&#xFF0C;&#x9700;&#x8981;&#x6B64;&#x7C92;&#x5B50;&#x6267;&#x884C;&#x52A8;&#x753B;&#x7684;&#x89D2;&#x5EA6;&#xFF0C;&#x52A8;&#x753B;&#x7684;&#x529B;&#x5EA6;&#xFF0C;&#x4EE5;&#x53CA;&#x5EF6;&#x8FDF;&#x65F6;&#x95F4;
+     animate({ deg, pow, delay } = {}){
+         // &#x540E;&#x7EED;&#x8865;&#x5168;
+     }
+
+     // &#x52A8;&#x753B;&#x7ED3;&#x675F;&#x56DE;&#x8C03;&#x5B58;&#x50A8;
+     onAnimationEnd(cb) {
+         if (typeof cb !== &apos;function&apos;) return;
+         this.animEndCBList.push(cb);
+     }
+
+     // &#x52A8;&#x753B;&#x7ED3;&#x675F;&#x56DE;&#x8C03;&#x6267;&#x884C;
+     emitEndCB() {
+         this.dom.style.cssText += `;-webkit-transform:translate3d(0,0,0);opacity:1;`;
+         this.animating = false;
+         try {
+             for (let cb  of this.animEndCBList) {
+                  cb();
+             }
+         } catch (error) {
+             console.warn(&quot;&#x56DE;&#x8C03;&#x62A5;&#x9519;:&quot;,cb);
+         }
+     }
+
+     // &#x7B80;&#x6613;&#x5B9E;&#x73B0;slot&#x529F;&#x80FD;&#xFF0C;&#x5411;&#x7C92;&#x5B50;&#x5BB9;&#x5668;&#x5185;&#x6DFB;&#x52A0;&#x5143;&#x7D20;
+     insertChild(child){
+         this.con.innerHTML = &apos;&apos;;
+         this.con.appendChild(child);
+     }
+}
+</code></pre><p>&#x81F4;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x7C92;&#x5B50;&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x73B0;&#x5728;&#x8003;&#x8651;&#x4E00;&#x4E0B;&#x6211;&#x4EEC;&#x5B9E;&#x73B0;&#x4E86;&#x6211;&#x4EEC;&#x7684;&#x8BBE;&#x8BA1;&#x601D;&#x8DEF;&#x5417;&#xFF1F;</p>
+<ul>
+<li>* &#x4F7F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;new Partical( )&#x7C92;&#x5B50;</li>
+<li>* &#x7C92;&#x5B50;&#x5B9E;&#x529B;&#x5BF9;&#x8C61;&#x5B58;&#x5728; animate &#x6267;&#x884C;&#x52A8;&#x753B;&#x65B9;&#x6CD5;</li>
+<li>* &#x6709;&#x52A8;&#x753B;&#x7ED3;&#x675F;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x5B58;&#x50A8;&#x548C;&#x6267;&#x884C;</li>
+<li>* &#x8BBE;&#x7F6E;&#x7C92;&#x5B50;&#x7684;&#x7236;&#x5143;&#x7D20;: renderIn &#x65B9;&#x6CD5;</li>
+<li>* &#x7236;&#x5143;&#x7D20;&#x5220;&#x9664;&#x7C92;&#x5B50;: deleteEl &#x65B9;&#x6CD5;</li>
+</ul>
+<p>&#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x7684;&#x5C55;&#x793A;&#x7C92;&#x5B50;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x7279;&#x610F;&#x5728;constructor&#x91CC;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A; Boom-Partical_con &#x5143;&#x7D20;&#x7528;&#x4E8E;&#x6A21;&#x62DF;slot&#x529F;&#x80FD;: insertChild&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x4F7F;&#x7528;&#x8005;&#x5C55;&#x793A;&#x4E0D;&#x540C;&#x7684;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x7206;&#x70B8;&#x1F4A5;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x8003;&#x8651;&#x4E00;&#x4E0B;&#x52A8;&#x753B;&#x7684;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;&#xFF0C;&#x52A8;&#x753B;&#x6BEB;&#x65E0;&#x7591;&#x95EE;&#x4E3A;&#x629B;&#x7269;&#x7EBF;&#x52A8;&#x753B;&#xFF0C;&#x8FD9;&#x79CD;&#x52A8;&#x753B;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7269;&#x7406;&#x516C;&#x5F0F;&#xFF0C;</p>
+<p>&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x901F;&#x5EA6;&#x66F2;&#x7EBF;&#x5B9E;&#x73B0;&#xFF0C;&#x60F3;&#x60F3;&#x4E0A;&#x629B;&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x60F3;&#x6210; &#x7531;&#x4E8E;&#x91CD;&#x529B;&#x5F71;&#x54CD; &#xFF0C;&#x53D8;&#x6210;&#x4E00;&#x4E2A;&#x901F;&#x5EA6;&#x9010;&#x6E10;&#x51CF;&#x5C0F;&#x7684;&#x5411;&#x4E0A;&#x4F4D;&#x79FB;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;</p>
+<p>&#x800C;&#x4E0B;&#x629B;&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x52A0;&#x901F;&#x8FC7;&#x7A0B;&#xFF1B;</p>
+<p>&#x5219;&#x53EF;&#x5BF9;&#x5E94;&#x4E3A;&#x901F;&#x5EA6;&#x66F2;&#x7EBF;&#x7684;easeOut &#x4E0E; easeIn,</p>
+<p>&#x800C;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x5300;&#x901F;&#x8FD0;&#x52A8;&#xFF0C;&#x5219;&#x662F; linear&#xFF1B;</p>
+<p>&#x6211;&#x4EEC;&#x4EE5;&#x6C34;&#x5E73;&#x5411;&#x53F3;&#x4E3A;X&#x6B63;&#x65B9;&#x5411;0&#x5EA6;&#xFF0C;&#x987A;&#x65F6;&#x9488;&#x65B9;&#x5411;&#x89D2;&#x5EA6;&#x589E;&#x52A0;&#xFF1B;</p>
+<p>&#x5219; &#x5C0F;&#x4E8E; 180&#x5EA6;&#x4E3A;&#x5411;&#x4E0B;&#xFF0C; &#x5927;&#x4E8E;180&#x5EA6;&#x4E3A;&#x5411;&#x4E0A;</p>
+<p>&#x5047;&#x8BBE;&#x65B9;&#x5411;&#x4E3A;`&#x56DB;&#x70B9;&#x949F;`&#x65B9;&#x5411;&#xFF0C;&#x5939;&#x89D2;&#x5219;&#x4E3A; `30` &#x5EA6;&#xFF0C;</p>
+<p>&#x6309;&#x7167;&#x9AD8;&#x4E2D;&#x7269;&#x7406;&#xFF0C;&#x5927;&#x5C0F;&#x4E3A;N&#x7684;&#x529B;:</p>
+<blockquote>
+<p>` &#x5728;X&#x8F74;&#x7684;&#x5206;&#x91CF;&#x5E94;&#x4E3A; cos(30) * N ` ` &#x5728;Y&#x8F74;&#x7684;&#x5206;&#x91CF;&#x5E94;&#x4E3A; sin(30) * N`</p>
+</blockquote>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/26/166b10477df7d557?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt=""></p>
+<p>&#x529B;&#x7684;&#x5206;&#x89E3;&#x56FE;&#x89E3;</p>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4; &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x4E00;&#x4E2A;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x529B;&#x5728;XY&#x8F74;&#x7684;&#x5206;&#x91CF;&#x5927;&#x5C0F;&#xFF0C;</p>
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x5C06; &#x529B; &#x7684;&#x6982;&#x5FF5; &#x8F6C;&#x5316;&#x4E3A; &#x89C6;&#x56FE;&#x4E2D; &#x4F4D;&#x79FB;&#x7684;&#x6982;&#x5FF5;&#xFF0C;</p>
+<p>&#x6211;&#x4EEC;&#x5C06; &#x529B;&#x91CF;1 &#x8BB0;&#x4E3A; 10vh&#x7684;&#x5927;&#x5C0F;</p>
+<p>&#x4E8E;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x53D8;&#x91CF;</p>
+<pre><code>const POWER = 10; // &#x5355;&#x4F4D; vh &#x529B;&#x7684;&#x5355;&#x4F4D;&#x8F6C;&#x5316;&#x6BD4;&#x4F8B;
+    const G = 5;      // &#x5355;&#x4F4D; vh &#x91CD;&#x529B;&#x503C;
+    const DEG = Math.PI / 180;  
+    const Duration = .4e3; //&#x5047;&#x8BBE;&#x52A8;&#x753B;&#x6267;&#x884C;&#x65F6;&#x957F;400&#x6BEB;&#x79D2;
+</code></pre><p>&#x7531;&#x6B64; &#x6211;&#x4EEC;&#x8865;&#x5168; animate&#x65B9;&#x6CD5;</p>
+<pre><code>// &#x6267;&#x884C;&#x52A8;&#x753B; &#x89D2;&#x5EA6; &#xFF0C; &#x529B; 1 ~ 10 ; 1 = 10vh
+    animate({ deg, pow, delay } = {}) {
+        this.direction = deg 
+&gt;
+ 180 ? &quot;UP&quot; : &quot;DOWN&quot;;
+        this.delay = delay || 0;
+        let r = Math.random();
+        this.targetZ = 0;
+        this.targetY = Math.round(pow * Math.sin(deg * DEG) * POWER);
+        this.targetX = Math.round(pow * Math.cos(deg * DEG) * POWER) * (r + 1);
+        this.scaleNum = (r * 0.8) * (r 
+&lt;
+ 0.5 ? -1 : 1);
+        this.raf();
+    }
+</code></pre><p>animte&#x7684;&#x601D;&#x8DEF;&#x4E3A;&#xFF1A;&#x901A;&#x8FC7;&#x4F20;&#x5165;&#x7684;&#x89D2;&#x5EA6;&#x548C;&#x529B;&#x5EA6; &#x8BA1;&#x7B97;&#x76EE;&#x6807;&#x7EC8;&#x70B9;&#x4F4D;&#x7F6E;&#xFF08;&#x56E0;&#x4E3A;&#x529B;&#x6700;&#x7EC8;&#x8F6C;&#x5316;&#x4E3A;&#x4F4D;&#x79FB;&#x503C;&#xFF0C;&#x529B;&#x8D8A;&#x5927;&#xFF0C;&#x76EE;&#x6807;&#x4F4D;&#x79FB;&#x8D8A;&#x5927;&#xFF09;</p>
+<p>&#x4F7F;&#x7528;&#x968F;&#x673A;&#x6570;&#x8BA1;&#x7B97;&#x6B64;&#x6B21;&#x52A8;&#x753B;&#x7684;&#x7F29;&#x653E;&#x503C;&#x53D8;&#x5316;&#x8303;&#x56F4;&#xFF08;-0.8 &#xFF5E; 0.8&#xFF09;</p>
+<p>&#x7136;&#x540E;&#x6267;&#x884C;&#x5237;&#x5E27;&#x64CD;&#x4F5C; raf</p>
+<pre><code>raf(){
+        // &#x6B63;&#x5728;&#x6267;&#x884C;&#x52A8;&#x753B;    
+        this.animating = true;
+
+        // &#x52A8;&#x753B;&#x5F00;&#x59CB;&#x65F6;&#x95F4;
+        this.StartTime = +new Date();
+        let StartTime = this.StartTime;
+
+        // &#x83B7;&#x53D6;&#x5EF6;&#x65F6;
+        let delay = this.delay;
+
+        // &#x52A8;&#x753B;&#x4F1A;&#x5728;&#x5EF6;&#x65F6;&#x540E;&#x5F00;&#x59CB;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x771F;&#x6B63;&#x5F00;&#x59CB;&#x52A8;&#x753B;&#x7684;&#x65F6;&#x95F4;
+        let StartTimeAfterDelay = StartTime + delay
+
+
+
+        let animate = () =
+&gt;
+ {
+            // &#x83B7;&#x53D6;&#x4ECE;&#x6267;&#x884C;&#x52A8;&#x753B;&#x5F00;&#x59CB;&#x7ECF;&#x8FC7;&#x4E86;&#x591A;&#x4E45;
+            let timeGap = +new Date() - StartTimeAfterDelay;
+            // &#x5927;&#x4E8E;0 &#x8BC1;&#x660E;&#x8FC7;&#x4E86;delay&#x65F6;&#x95F4;
+            if (timeGap 
+&gt;
+= 0) {
+                // &#x5927;&#x4E8E;Duration&#x8BC1;&#x660E;&#x8FC7;&#x4E86;&#x7ED3;&#x675F;&#x65F6;&#x95F4;
+                if (timeGap 
+&gt;
+ Duration) {
+                    // &#x6267;&#x884C;&#x52A8;&#x753B;&#x7ED3;&#x675F;&#x56DE;&#x8C03;
+                    this.emitEndCB();
+                    return;
+                }
+                // &#x8BBE;&#x7F6E;&#x5E94;&#x8BE5;&#x8BBE;&#x7F6E;&#x7684;&#x4F4D;&#x7F6E;&#x7684;&#x6837;&#x5F0F;
+                this.dom.style.cssText += `;will-change:transform;-webkit-transform:translate3d(${this.moveX(timeGap)}vh,${this.moveY(timeGap)}vh,0) scale(${this.scale(timeGap)});opacity:${this.opacity(timeGap)};`;
+            }
+            requestAnimationFrame(animate);
+        }
+        animate();
+    }
+</code></pre><p>&#x5237;&#x5E27;&#x64CD;&#x4F5C;&#x4E2D;&#x5224;&#x65AD;&#x4E86;delay&#x65F6;&#x95F4;&#x7684;&#x5904;&#x7406;&#x4EE5;&#x53CA;&#x7ED3;&#x675F;&#x7684;&#x65F6;&#x95F4;&#x5904;&#x7406;&#x56DE;&#x8C03;</p>
+<p>&#x90A3;&#x4E48;&#x63ED;&#x6653;&#x6765;&#x5C31;&#x5269;&#x4E0B; moveX&#xFF0C;moveY&#xFF0C;scale&#xFF0C;opacity&#x7684;&#x8BBE;&#x7F6E;</p>
+<pre><code>// &#x6C34;&#x5E73;&#x65B9;&#x5411;&#x4E3A;&#x5300;&#x901F;&#xFF0C;&#x6240;&#x4EE5;&#x4F7F;&#x7528;Linear
+    moveX(currentDuration) {
+        // &#x6B64;&#x5904; * 2 &#x662F;&#x6548;&#x679C;&#x77EB;&#x6B63;&#x540E;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x53EF;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x9700;&#x6C42;&#x4FEE;&#x6539;&#x6C34;&#x5E73;&#x4F4D;&#x79FB;&#x901F;&#x5EA6;
+        return Linear(currentDuration, 0, this.targetX, Duration) * 2;
+    }
+
+    // &#x7F29;&#x653E; &#x4F7F;&#x7528;&#x4E86;easeOut&#x66F2;&#x7EBF;&#xFF0C; &#x53EF;&#x6839;&#x636E;&#x9700;&#x6C42;&#x81EA;&#x884C;&#x4FEE;&#x6539;
+    scale(currentDuration) {
+        return Quad.easeOut(currentDuration, 1, this.scaleNum, Duration);
+    }
+
+    // &#x900F;&#x660E;&#x5EA6; &#x4F7F;&#x7528;&#x4E86;easeIn&#x901F;&#x5EA6;&#x66F2;&#x7EBF;&#xFF0C;&#x4FDD;&#x8BC1;&#x540E;&#x6D88;&#x5931;
+    opacity(currentDuration) {
+        return Quad.easeIn(currentDuration, 1, -1, Duration);
+    }
+
+    // &#x7AD6;&#x76F4;&#x65B9;&#x5411;&#x4E0A;&#x4F4D;&#x79FB;&#x8BA1;&#x7B97;
+    moveY(currentDuration) {
+        let direction = this.direction;
+        if (direction === &apos;UP&apos;) {
+            // G&#x7528;&#x4E8E;&#x6A21;&#x62DF;&#x4E0A;&#x629B;&#x8FC7;&#x7A0B;&#x7684;&#x91CD;&#x529B;
+            // &#x5982;&#x679C;&#x662F;&#x4E0A;&#x629B;&#x8FD0;&#x52A8;
+            if (currentDuration 
+&lt;
+ Duration / 2) {
+                // &#x4E0A;&#x629B;&#x8FC7;&#x7A0B; &#x6211;&#x4EEC;&#x4F7F;&#x7528;easeOut&#x901F;&#x5EA6;&#x9010;&#x6E10;&#x51CF;&#x5C0F;&#xFF0C;&#x6211;&#x4EEC;&#x8BA9;&#x52A8;&#x753B;&#x5728;&#x4E00;&#x534A;&#x65F6;&#x79FB;&#x5230;&#x6700;&#x9AD8;&#x70B9;
+                return Quad.easeOut(currentDuration, 0, this.targetY + G, Duration / 2);
+            }
+            // &#x4E0A;&#x629B;&#x7684;&#x4E0B;&#x964D;&#x8FC7;&#x7A0B;&#xFF0C;&#x4ECE;&#x6700;&#x9AD8;&#x70B9;&#x4E0B;&#x964D;
+            return this.targetY + G - Quad.easeIn(currentDuration - Duration / 2, 0, this.targetY / 2, Duration / 2);
+        }
+        // &#x4E0B;&#x629B;&#x8FD0;&#x52A8;&#x76F4;&#x63A5;easeIn
+        return Quad.easeIn(currentDuration, 0, this.targetY, Duration);
+    }
+</code></pre><p>&#x81F3;&#x6B64;&#xFF0C;partical.js &#x7ED3;&#x675F;&#xFF0C;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x52A0;&#x4E00;&#x884C;</p>
+<pre><code>export default Partical;
+</code></pre><p>&#x6B64;&#x65F6; &#x6211;&#x4EEC;&#x7684;partical.js&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;:</p>
+<ul>
+<li>* new &#x7684;&#x65F6;&#x5019;&#x521B;&#x5EFA;&#x4E86;&#x7C92;&#x5B50;&#x5143;&#x7D20;&#xFF0C;</li>
+<li>* &#x4F7F;&#x7528;onAnimtionEnd&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x52A8;&#x753B;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</li>
+<li>* insertChild&#x53EF;&#x4EE5;&#x5411;&#x7C92;&#x5B50;&#x5185;&#x6E32;&#x67D3;&#x4F7F;&#x7528;&#x8005;&#x81EA;&#x5B9A;&#x4E49;&#x7684;dom</li>
+<li>* renderIn &#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x7C92;&#x5B50;&#x7236;&#x5143;&#x7D20;</li>
+<li>* deleteEl &#x53EF;&#x4EE5;&#x4ECE;&#x7236;&#x5143;&#x7D20;&#x5220;&#x9664;&#x7C92;&#x5B50;</li>
+<li>* animate &#x53EF;&#x4EE5;&#x6267;&#x884C;&#x5237;&#x5E27;&#xFF0C;&#x6E32;&#x67D3;&#x8BA1;&#x7B97;&#x4F4D;&#x7F6E;&#xFF0C;&#x89E6;&#x53D1;&#x56DE;&#x8C03;</li>
+</ul>
+<p>&#x4E8E;&#x662F;&#x5BF9;&#x4E8E;&#x7C92;&#x5B50;&#x6765;&#x8BF4;&#xFF0C;&#x53EA;&#x5269;&#x4E0B;&#x5728;&#x6267;&#x884C;animte&#x7684;&#x65F6;&#x5019; &#x4F20;&#x5165;&#x7684;&#x529B;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x65B9;&#x5411;&#xFF0C;&#x4EE5;&#x53CA;&#x5EF6;&#x8FDF;&#x65F6;&#x95F4;</p>
+<hr>
+<h2 id="&#x7C92;&#x5B50;&#x7BA1;&#x7406;-boomjs"><strong>&#x7C92;&#x5B50;&#x7BA1;&#x7406; Boom.js</strong></h2>
+<blockquote>
+<p>&#x4E4B;&#x6240;&#x4EE5;&#x53EB;Boom&#x662F;&#x56E0;&#x4E3A;&#x4E00;&#x5F00;&#x59CB;&#x7EC4;&#x4EF6;&#x540D;&#x53EB;Boom&#xFF0C;&#x5176;&#x5B9E;&#x53EB;ParticalController&#x66F4;&#x597D;&#x4E00;&#x4E9B;&#xFF0C;&#x54C8;&#x54C8;&#x1F604;</p>
+</blockquote>
+<p>&#x5BF9;&#x4E8E;Boom.js&#x7684;&#x529F;&#x80FD;&#x9700;&#x6C42;&#x4E3A;</p>
+<ul>
+<li>&#x521B;&#x5EFA;&#x7C92;&#x5B50;</li>
+<li>&#x6267;&#x884C;&#x7C92;&#x5B50;&#x52A8;&#x753B;&#xFF0C;&#x8D4B;&#x4E88;&#x52A8;&#x753B;&#x529B;&#x3001;&#x89D2;&#x5EA6;&#x3001;&#x5EF6;&#x65F6;</li>
+<li>&#x8BBE;&#x7F6E;&#x7C92;&#x5B50;&#x5BB9;&#x5668;</li>
+</ul>
+<p>&#x53EF;&#x8FBE;&#x5230;&#x6548;&#x679C;&#xFF1A;</p>
+<ul>
+<li>&#x4E0D;&#x5173;&#x5FC3;&#x4E1A;&#x52A1;&#xFF0C;&#x4E1A;&#x52A1;&#x4F7F;&#x7528;&#x8005;&#x4F20;&#x5165;&#x6BCF;&#x4E2A;&#x7C92;&#x5B50;slot&#x5185;&#x5BB9;&#x6570;&#x7EC4;</li>
+<li>&#x7C92;&#x5B50;&#x7EC4;&#x4EF6;&#x53EF;&#x590D;&#x7528;</li>
+<li>&#x6613;&#x4E8E;&#x7EF4;&#x62A4;&#xFF08;&#x53EF;&#x80FD;&#x662F;&#x54C8;&#x54C8;&#x54C8;&#xFF09;</li>
+</ul>
+<h2 id="&#x4E8E;&#x662F;&#x7C92;&#x5B50;&#x7BA1;&#x7406;&#x5668;&#x6784;&#x67B6;&#x4E3A;&#xFF1A;"><strong>&#x4E8E;&#x662F;&#x7C92;&#x5B50;&#x7BA1;&#x7406;&#x5668;&#x6784;&#x67B6;&#x4E3A;&#xFF1A;</strong></h2>
+<pre><code>import Partical from &quot;partical.js&quot;;
+
+    class Boom{
+        // &#x5B9E;&#x4F8B;&#x5316;&#x7684;&#x7C92;&#x5B50;&#x5217;&#x8868;
+        particalList = [];
+        // &#x5355;&#x6B21;&#x751F;&#x6210;&#x7684;&#x7C92;&#x5B50;&#x4E2A;&#x6570;
+        particalNumbers = 6;
+        // &#x6267;&#x884C;&#x52A8;&#x753B;&#x7684;&#x95F4;&#x9694;&#x65F6;&#x95F4;
+        boomTimeGap = .1e3;
+        boomTimer = 0;
+        // &#x7528;&#x6237;&#x63D2;&#x5165;&#x7C92;&#x5B50;&#x7684;slot &#x7684;&#x5185;&#x5BB9;
+        childList = [];
+        // &#x9ED8;&#x8BA4;&#x65CB;&#x8F6C;&#x89D2;&#x5EA6;
+        rotate = 120;
+        // &#x9ED8;&#x8BA4;&#x7684;&#x7C92;&#x5B50;&#x53D1;&#x6563;&#x8303;&#x56F4;
+        spread = 180;
+        // &#x9ED8;&#x8BA4;&#x968F;&#x673A;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;
+        delayRange = 100;
+        // &#x9ED8;&#x8BA4;&#x529B;&#x5EA6;
+        power = 3;
+        // &#x6B64;&#x6B21;&#x6267;&#x884C;&#x7C92;&#x5B50;&#x7206;&#x70B8;&#x7684;&#x662F;&#x90A3;&#x4E2A;&#x5BB9;&#x5668;
+        con = null;
+
+        constructor({ childList , container , boomNumber , rotate , spread , delayRange , power} = {}){
+
+            this.childList = childList || [];
+            this.con = container || null;
+            this.particalNumbers = boomNumber || 6;
+            this.rotate = rotate || 120;
+            this.spread = spread || 180;
+            this.delayRange = delayRange || 100;
+            this.power = power || 3;
+            this.createParticals(this.particalNumbers);
+        }
+        setContainer(con){
+            this.con = con;
+        }
+        // &#x521B;&#x5EFA;&#x7C92;&#x5B50; &#x5B58;&#x5165;&#x5185;&#x5B58;&#x6570;&#x7EC4;&#x4E2D;
+        createParticals(num){
+            for(let i = 0 ; i 
+&lt;
+ num ; i++){
+                let partical = new Partical();
+                partical.onAnimationEnd(()=
+&gt;
+{
+                    partical.deleteEl();
+                });
+                this.particalList.push(partical)
+            }
+        }
+        // &#x6267;&#x884C;&#x52A8;&#x753B;
+        boom(){
+            // &#x9650;&#x5236;&#x52A8;&#x753B;&#x6267;&#x884C;&#x95F4;&#x9694;
+            let lastBoomTimer = this.boomTimer;
+            let now = +new Date();
+            if(now - lastBoomTimer 
+&lt;
+ this.boomTimeGap){
+                // console.warn(&quot;&#x70B9;&#x7684;&#x592A;&#x5FEB;&#x4E86;&quot;);
+                return;
+            }
+            this.boomTimer = now;
+
+
+            console.warn(&quot;&#x7C92;&#x5B50;&#x603B;&#x6570;:&quot; , this.particalList.length)
+            let boomNums = 0;
+            // &#x5728;&#x5185;&#x5B58;&#x5217;&#x8868;&#x627E;&#xFF0C;&#x67E5;&#x627E;&#x6CA1;&#x6709;&#x6267;&#x884C;&#x52A8;&#x753B;&#x7684;&#x7C92;&#x5B50;
+            let unAnimateList = this.particalList.filter(partical =
+&gt;
+ partical.animating == false);
+
+            let childList = this.childList;
+            let childListLength = childList.length;
+
+            let rotate = this.rotate;
+            let spread = this.spread;
+            let delayRange = this.delayRange;
+            let power = this.power;
+
+            // &#x6BCF;&#x6709;&#x4E00;&#x4E2A;&#x672A;&#x6267;&#x884C;&#x52A8;&#x753B;&#x7684;&#x7C92;&#x5B50;&#xFF0C;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x52A8;&#x753B;
+            for(let partical of unAnimateList){
+                if(boomNums 
+&gt;
+= this.particalNumbers) return ;
+
+                boomNums++;
+                let r = Math.random();
+                // &#x8BBE;&#x7F6E;&#x7C92;&#x5B50;&#x7236;&#x5BB9;&#x5668;
+                partical.renderIn(this.con);
+                // &#x968F;&#x673A;&#x9009;&#x62E9;&#x7C92;&#x5B50;&#x7684;slot&#x5185;&#x5BB9;
+                partical.insertChild(childList[Math.floor(r * childListLength)].cloneNode(true));
+                // &#x6267;&#x884C;&#x52A8;&#x753B;&#xFF0C;&#x5728;&#x8F93;&#x5165;&#x8303;&#x56F4;&#x5185;&#x968F;&#x673A;&#x89D2;&#x5EA6;&#x3001;&#x529B;&#x5EA6;&#x3001;&#x5EF6;&#x8FDF;
+                partical.animate({
+                    deg: (r * spread + rotate) % 360,
+                    pow: r * power + 1,
+                    delay: r * delayRange,
+                });
+            }
+            // &#x5982;&#x679C;&#x7C92;&#x5B50;&#x6811;&#x6728;&#x4E0D;&#x591F;&#xFF0C;&#x5219;&#x518D;&#x6B21;&#x521B;&#x5EFA;&#xFF0C;&#x9632;&#x6B62;&#x4E0B;&#x6B21;&#x4E0D;&#x591F;&#x7528;
+            if(boomNums 
+&lt;
+ this.particalNumbers){
+                this.createParticals(this.particalNumbers - boomNums);
+            }
+        }
+    }
+
+
+    export default Boom;
+</code></pre><h2 id="&#x4F7F;&#x7528;demo"><strong>&#x4F7F;&#x7528;demo</strong></h2>
+<pre><code>let boomChildList = [];
+
+
+    for(let i = 0 ; i 
+&lt;
+ 10; i++){
+        let tempDom = document.createElement(&quot;div&quot;);
+        tempDom.className = &quot;demoDom&quot;;
+        tempDom.innerHTML = i;
+        boomChildList.push(tempDom);
+    }
+
+    let boom = new Boom({
+        childList: boomChildList,
+        boomNumber: 6,
+        rotate: 0,
+        spread: 360,
+        delayRange: 100,
+        power: 3,
+    });
+</code></pre><h2 id="&#x4EE3;&#x7801;&#x8D44;&#x6E90;"><strong>&#x4EE3;&#x7801;&#x8D44;&#x6E90;</strong></h2>
+<p><a href="https://link.juejin.im/?target=https%3A%2F%2Flink.zhihu.com%2F%3Ftarget%3Dhttps%253A%2F%2Fpan.baidu.com%2Fs%2F1nG35lkj0mYWqalwrl2f7og" target="_blank">&#x6E90;&#x7801;&#x94FE;&#x63A5;&#x200B;pan.baidu.com</a></p>
+<h2 id="&#x7EC4;&#x4EF6;&#x6548;&#x679C;&#x9884;&#x89C8;"><strong>&#x7EC4;&#x4EF6;&#x6548;&#x679C;&#x9884;&#x89C8;</strong></h2>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/26/166b10477dfcc645?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt=""></p>
+<h2 id="&#x7ED3;&#x5C3E;"><strong>&#x7ED3;&#x5C3E;</strong></h2>
+<p>&#x53EF;&#x80FD;&#x6548;&#x679C;&#x4E2D;&#x5B9E;&#x73B0;&#x7684;&#x601D;&#x7EF4;&#x8FD8;&#x6709;&#x4E0D;&#x59A5;&#x548C;&#x6B20;&#x7F3A;&#xFF0C;&#x6B22;&#x8FCE;&#x5404;&#x4F4D;&#x5927;&#x5927;&#x63D0;&#x51FA;&#x5B9D;&#x8D35;&#x610F;&#x89C1;&#xFF0C;&#x4E92;&#x76F8;&#x4EA4;&#x6D41;&#x3001;&#x5B66;&#x4E60;&#xFF01;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ye-mian.html" class="navigation navigation-prev " aria-label="Previous page: 绘制熊">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="li-yong-gitbook-+-gitpage-zhi-zuo-ge-ren-bo-ke.html" class="navigation navigation-next " aria-label="Next page: 利用gitbook+gitpage制作个人博客">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DOM爆炸效果","level":"1.3","depth":1,"next":{"title":"利用gitbook+gitpage制作个人博客","level":"1.4","depth":1,"path":"li-yong-gitbook-+-gitpage-zhi-zuo-ge-ren-bo-ke.md","ref":"li-yong-gitbook-+-gitpage-zhi-zuo-ge-ren-bo-ke.md","articles":[]},"previous":{"title":"绘制熊","level":"1.2","depth":1,"path":"ye-mian.md","ref":"ye-mian.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["back-to-top-button","editlink","ad","splitter","disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"luzhenqian"},"ad":{"contentBottom":"%3Cdiv%20style%3D%22color%3Ared%22%3E%u4F60%u597D%3C/div%3E","contentTop":"<div style=\"color:red\">你好</div>"},"editlink":{"label":{"en":"Edit This Page","zh-cn":"编辑本页"},"multilingual":false,"base":"https://github.com/zhaoda/webpack-handbook/edit/master/content"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dombao-zha-xiao-guo.md","mtime":"2018-10-28T14:42:20.390Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-28T14:49:01.887Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ad/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
